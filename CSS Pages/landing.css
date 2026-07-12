@@ -125,11 +125,11 @@ body {
 }
 
 #name{
-    font-size:5rem;
+    font-size:4.5rem;
 }
 
 #slogan{
-    font-size: 1.75rem;
+    font-size: 1.7rem;
 }
 
 .home-services{
@@ -196,6 +196,7 @@ body {
     font-size:1.6rem;
     color:rgb(238, 229, 220);
     text-shadow: 2px 2px 3px rgb(94, 87, 87);
+    text-align:center;
 }
 
 .dropdown{
