@@ -58,7 +58,6 @@ body {
     align-items:center;
     height: 15%;
     width: 100%;
-   /* border: 1px solid black; */
     justify-content:space-between;
     font-size:1.2rem;
 }
@@ -210,7 +209,6 @@ body {
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 12px;
     box-shadow: 0 15px 35px rgba(0,0,0,.2);
-    
     display:none;
     
 }
@@ -222,6 +220,11 @@ body {
     flex-direction:column;
     justify-content:center;
 
+}
+
+.content a{
+    text-decoration:none;
+    color:rgb(255, 244, 244);
 }
 
 .dropdown-content a{
