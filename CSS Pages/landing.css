@@ -1,0 +1,238 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+      font-family: "EB Garamond", serif;
+}
+
+h1,h2,h3{
+    font-family:"Prata", serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#bg {
+    position: fixed;
+    inset: 0;
+
+    background-image: url("../Media/lotus-bg.png");
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(1.75px) brightness(70%);
+
+    transform: scale(1.1); /* prevents white edges caused by blur */
+
+    z-index: -2;
+}
+#page {
+    width: 80%;
+    height: 80vh;
+
+    background: rgba(255,255,255,0.15);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(4.5px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    color: rgb(253, 246, 231);
+
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+}
+
+
+.navigation{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    height: 15%;
+    width: 100%;
+   /* border: 1px solid black; */
+    justify-content:space-between;
+    font-size:1.2rem;
+}
+
+.contents-container{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    justify-content:space-evenly;
+    width: 70%;
+}
+
+.content:hover{
+    cursor:pointer;
+    background: rgba(255,255,255,0.1);
+
+    border-radius: 7px;
+
+    backdrop-filter: blur(5px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+#logo{
+    width:95px;
+    height:auto;
+}
+
+.book-now{
+     background: rgba(255,255,255,0.15);
+
+    border-radius: 10px;
+
+    backdrop-filter: blur(5px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    height: 40px;
+    width: 120px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;   /* Horizontal */
+    align-items: center;       /* Vertical */
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color:rgb(255, 244, 244)
+}
+
+.book-now:hover {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-2px);
+}
+
+#hero{
+    display: flex;
+    justify-content: center;   /* Horizontal */
+    align-items: center;
+    padding: 20px;
+    flex-direction:column; 
+
+}
+
+#name{
+    font-size:5rem;
+}
+
+#slogan{
+    font-size: 1.75rem;
+}
+
+.home-services{
+    display: flex;
+    justify-content: center;   /* Horizontal */
+    align-items: center;
+    padding: 10px;
+    flex-direction:row;
+    justify-content:space-evenly;
+    width: 90%;
+    height: 45%;
+}
+
+.cards{
+
+    height: 100%;
+    width: 20%;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+}
+
+.kundali .image{
+     background-image:url(../Media/kundali-card.png);
+     filter:brightness(120%);
+}
+
+.card-reading .image{
+     background-image:url(../Media/ace-card.png);
+}
+
+.healing .image{
+     background-image:url(../Media/healing-card.jpeg);
+}
+
+.past-life .image{
+     background-image:url(../Media/past-life-card.png);
+}
+
+.image{
+    height:60%;
+    width: 100%;
+   
+    background-size:cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.text{
+    height: 40%;
+    width: 100%;
+    backdrop-filter: blur(10px); 
+    background: rgba(238, 219, 178, 0.212);
+    border-bottom-left-radius: 10px;
+    /*background-color:rgb(253, 253, 253); */
+    border-bottom-right-radius: 10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.6rem;
+    color:rgb(238, 229, 220);
+    text-shadow: 2px 2px 3px rgb(94, 87, 87);
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-content{
+    position:absolute;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.2);
+    
+    display:none;
+    
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+    width: 350%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+.dropdown-content a{
+    text-decoration:none;
+    color:rgb(255, 153, 0);
+    padding: 8px 8px;
+    border-radius:12px;
+} 
+
+.dropdown-content a:hover{
+    background-color:rgba(250, 174, 32, 0.938);
+    color:white;
+    text-shadow: 0px 0px;
+}
+    
